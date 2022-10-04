@@ -1,0 +1,198 @@
+.product {
+    background: url('../img/bg_product.svg') center center repeat;
+    font-family: 'Montserrat';
+    color: #4B2DA6;
+}
+.product__container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: clamp(1.25rem, 0.256rem + 4.97vw, 3.438rem); 
+}
+.product__title {
+    text-align: center;
+    font-size: clamp(1.25rem, 0.455rem + 3.98vw, 3rem);
+    font-weight: 700;
+    padding-top: clamp(1.25rem, 0.398rem + 4.26vw, 3.125rem);
+    padding-bottom: clamp(1.25rem, 0.398rem + 4.26vw, 3.125rem);
+
+}
+.product__slider {
+    position: relative;
+}
+.swiper {
+    overflow: hidden;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.swiper-wrapper {
+    display: inline-flex;
+}
+
+.slider__buttons {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+@media (max-width: 1320px) {
+    .slider__buttons {
+        position: absolute;
+        top: -100px;
+        right: 35%;
+        width: 30%;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .slider__buttons {
+        display: none;
+        overflow: hidden;
+    }
+    
+}
+
+
+
+.slide__button:hover {
+    transition: 500ms;
+    background-color: rgba(61, 13, 206, 0.44);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.slider__btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-image: 
+    url('../img/icon/arrow_btn.svg'),
+    linear-gradient(to top,rgba(114, 83, 209, 0.56), rgba(114, 83, 209, 0.56));
+    background-position: 45% center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: -120px;
+}
+.swiper-button-next {
+    position: absolute;
+    right: -120px;
+    transform: rotate(180deg);
+}
+.swiper-button-prev:hover {
+    transition: 500ms;
+    background-color: rgba(61, 13, 206, 0.44);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.swiper-button-next:hover {
+    transition: 500ms;
+    background-color: rgba(61, 13, 206, 0.44);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+
+
+
+
+.swiper-slide { 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 320px;
+    height: clamp(32.5rem, 29.659rem + 14.2vw, 38.75rem);
+    background-color: rgba(75, 45, 166, 0.41);
+    border-radius: 6px;
+    margin: auto;
+}
+.slide__thumb {
+
+}
+.slide__picture {
+    max-width: 136px;
+    width: clamp(6.25rem, 5.227rem + 5.11vw, 8.5rem);
+    display: block;
+    margin: auto;
+    padding-top: 30px;
+}
+.slide__text {
+    color: #fff;
+    padding: 10px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+.slide__text_title {
+    font-size: clamp(1.125rem, 0.99rem + 0.67vw, 1.5rem);
+    font-weight: medium;
+    padding: 0 0 10px 0;
+    font-weight: 500;
+    line-height: 32px;
+}
+.slide__text_desc {
+    font-size: clamp(0.875rem, 0.785rem + 0.45vw, 1.125rem);
+    line-height: 27px;
+    text-align: justify;
+}
+
+.slide__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 20px 26px 10px;
+    max-width: 145px;
+    background-color:rgba(75, 45, 166, 0.44);
+    border-radius: 8px;
+    padding: 8px 10px;
+}
+
+.button__link {
+}
+.slide__btn {
+    display: flex;
+    justify-content: end;
+    cursor: pointer;
+}
+.link__btn {
+    font-size: clamp(0.75rem, 0.693rem + 0.28vw, 0.875rem);
+    color: #fff;
+    line-height: 21px;
+    text-decoration: none;
+}
+.button__icon {
+    max-width: 31px;
+    max-height: 16px;
+    width: clamp(1.563rem, 1.392rem + 0.85vw, 1.938rem);
+}
+
+.product__button_all {
+    background-color: #8571C2;
+    border-radius: 6px;
+    max-width: 300px;
+    width: clamp(13.75rem, 10.991rem + 13.79vw, 18.75rem);
+    margin: 0 auto;
+    padding: 22px 16px;
+    margin-top: 72px;
+    margin-bottom: 60px;
+    cursor: pointer;
+}
+
+.product__button_all:hover {
+    transition: 500ms;
+    background-color: rgba(61, 13, 206, 0.55);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
+}
+
+.button_all {
+    font-size: clamp(0.875rem, 0.648rem + 1.14vw, 1.375rem);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+

@@ -1,0 +1,73 @@
+.info-product {
+    font-family: 'Montserrat';
+    color: #4b2da6;
+
+}
+.info-product__container {
+    max-width: 1020px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.name__product {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 60px;
+    padding: 15px 0 15px 0;
+    margin: 40px 0 40px 0;
+}
+
+.product__img {
+    margin: clamp(-1.875rem, -2.784rem + 4.55vw, 0.625rem) 0;
+    width: clamp(13.75rem, 10.721rem + 15.15vw, 20.188rem);
+    max-width: 200px;
+    max-height: 300px;
+    width: clamp(6.25rem, 1.705rem + 22.73vw, 18.75rem);
+    height: clamp(9.375rem, 5.966rem + 17.05vw, 18.75rem);
+}
+
+.geo__gorn {
+
+}
+.product__title {
+    font-size: clamp(1.5rem, 1.147rem + 1.76vw, 2.25rem);
+    font-weight: 600;
+}
+.description__product {
+    font-size: clamp(1rem, 0.765rem + 1.18vw, 1.5rem);
+    line-height: clamp(1.688rem, 1.46rem + 1.14vw, 2.313rem);
+    text-align: justify;
+    margin: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem) 0;
+}
+
+
+.geo__con {
+    gap: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+    font-size: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+}
+
+.geo__gorn__title {
+    font-size: clamp(1.125rem, 0.716rem + 2.05vw, 2.25rem);
+}
+
+.geo__single {
+    gap: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);
+}
+
+.geo__single_title {
+
+}
+
+@media (max-width: 476px) {
+    .geo__single {
+        display: block;
+    }
+    .product__img {
+        display: block;
+        margin: 0 auto;
+    }
+    .geo__single_title {
+        position: relative;
+        top: 40px;
+    }
+}

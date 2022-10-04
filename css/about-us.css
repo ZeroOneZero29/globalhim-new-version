@@ -1,0 +1,84 @@
+.about-us {
+    background-color: #FFF;
+    font-family: Montserrat;
+    color: #4B2DA6;
+}
+.about-us__container {
+    max-width: 1114px;
+    margin: 0 auto;
+    padding: 0 10px 0 10px;
+}
+.about-us__top-container::after{
+    content: '';
+    display: block;
+    width: clamp(17.813rem, 7.45rem + 51.81vw, 69.625rem);
+    height: 2px;
+    background: #4B2DA6;
+    margin: clamp(1.125rem, 0.75rem + 1.88vw, 3rem) auto;
+}
+.about-us__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: clamp(1.25rem, 0.614rem + 3.18vw, 3rem);
+    padding-top:clamp(1.5rem, 1.175rem + 1.63vw, 3.125rem);
+    padding-bottom: clamp(0.625rem, 0.25rem + 1.88vw, 2.5rem);
+}
+.about-us__subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-size: clamp(0.875rem, 0.623rem + 1.26vw, 1.5rem);
+    margin: 0 30px 0 30px;
+}
+
+.about-us__item {
+    text-align: center;
+    font-weight: 500;
+    margin: 0 10px 0 10px;
+}
+.about-us__botton-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.about-us__card {
+   margin: clamp(1.25rem, 0.998rem + 1.26vw, 1.875rem)  30px;
+   display: flex;
+   align-items: center;
+   max-width: 300px;
+   justify-content: space-between;
+   flex-direction: column;
+
+}
+.about-us__icon {
+    width: clamp(3.125rem, 2.625rem + 2.5vw, 5.625rem);
+    height: clamp(3.125rem, 2.625rem + 2.5vw, 5.625rem);
+    position: relative;
+}
+.about-us__icon::before {
+    content: '';
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    background-color: rgba(114, 83, 209, 0.38);;
+}
+
+/*
+.about-us__ellipse {
+    background-color: rgba(114, 83, 209, 0.38);
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+}
+*/
+.about-us__heading {
+    padding: clamp(0.938rem, 0.686rem + 1.26vw, 1.563rem) 0;
+    font-size: clamp(1.125rem, 0.974rem + 0.76vw, 1.5rem);
+    font-weight: 600;
+}
+.about-us__text {
+    font-size: clamp(0.75rem, 0.599rem + 0.76vw, 1.125rem);
+    align-items: center;
+}
