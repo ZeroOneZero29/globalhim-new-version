@@ -9,6 +9,12 @@ app.listen(3000, ()=>{
     console.log(3000)
 })
 
+
+
+app.get("/product/:name", function(req, res) {;
+    res.render(`products/${req.params.name}`)
+});
+
 app.get('/', function(req, res) {
     res.render('index');
-  });
+});
