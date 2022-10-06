@@ -106,6 +106,7 @@
     background-color: rgba(75, 45, 166, 0.41);
     border-radius: 6px;
     margin: auto;
+    justify-content: center;
 }
 .slide__thumb {
 
