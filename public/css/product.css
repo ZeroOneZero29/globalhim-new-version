@@ -1,5 +1,6 @@
 .product {
     background: url('../img/bg_product.svg') center center repeat;
+    padding-bottom: 50px;
     font-family: 'Montserrat';
     color: #4B2DA6;
 }
@@ -177,7 +178,6 @@
     margin: 0 auto;
     padding: 22px 16px;
     margin-top: 72px;
-    margin-bottom: 60px;
     cursor: pointer;
 }
 
@@ -194,6 +194,7 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
