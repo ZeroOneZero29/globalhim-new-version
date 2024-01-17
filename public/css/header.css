@@ -62,10 +62,10 @@
 .menu__link {
     text-decoration: none;
     color: #fff;
+    transition: color 300ms;
 }
 .menu__link:hover{
     color: rgb(171, 156, 215);;
-    transition: 300ms;
     cursor: pointer;
 }
 

@@ -82,6 +82,7 @@
     background-color:rgba(75, 45, 166, 0.44);
     border-radius: 8px;
     padding: 8px 10px;
+    transition: all 500ms;
 }
 
 .slide__button:hover {

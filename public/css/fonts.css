@@ -1,3 +1,46 @@
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Montserrat"), 
+        url("/public/img/fonts/MontserratLight.woff") format("woff"),
+        url("/public/img/fonts/MontserratLight.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Montserrat"), 
+        url("/public/img/fonts/MontserratRegular.woff") format("woff"),
+        url("/public/img/fonts/MontserratRegular.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Montserrat"), 
+        url("/public/img/fonts/MontserratMedium.woff") format("woff"),
+        url("/public/img/fonts/MontserratMedium.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    src: local("Montserrat"), 
+        url("/public/img/fonts/MontserratSemiBold.woff") format("woff"),
+        url("/public/img/fonts/MontserratSemiBold.ttf") format("tff");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    src: local("Montserrat"), 
+        url("/public/img/fonts/MontserratBold.woff") format("woff"),
+        url("/public/img/fonts/MontserratBold.ttf") format("tff");
+}
+
+
