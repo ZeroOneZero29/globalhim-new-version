@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="public/css/about-us.css">
     <link rel="stylesheet" href="public/css/product.css">
     <link rel="stylesheet" href="public/css/contact.css">
+    <link rel="stylesheet" href="public/css/form.css">
     <link rel="stylesheet" href="public/css/footer.css">
     <script src="public/js/scroll.js"></script>
 
@@ -250,6 +251,32 @@
                     <p class="contact__maps_text">630024, Новосибирская область, г. Новосибирск, ул. Мира, д. 41, помещ. 6
                     </p>
                 </div>
+            </div>
+        </div>
+        <div class="coolback__container">
+            <div class="form-container">
+                <p class="form__title">Форма обратной связи</p>
+                <form action="/message" method="post" class="form_coolback">
+                    <div class="input__name_container class_input_container">
+                        <input required type="text" class="name_input class_input"">
+                        <label class="text__name_input text_input">Имя:</label>
+                    </div>
+                    <div class="input__email_container class_input_container">
+                        <input required type="email" class="email_input class_input">
+                        <label class="text__email_input text_input">Email:</label>
+                    </div>
+                    <div class="input__tel_container class_input_container">
+                        <input required type="tel" class="tel_input class_input" >
+                        <label class="text__tel_input text_input">Телефон:</label>
+                    </div>
+                    <div class="input__problem_container class_input_container">
+                        <textarea name="problem" class="problem_input class_input"  cols="30" rows="5"></textarea>
+                        <label class="text__problem_input text_input">Ваш вопрос:</label>
+                    </div>
+                    <div class="button_input">
+                        <button class="btn_input" type="submit">Отправить</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

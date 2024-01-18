@@ -1,0 +1,86 @@
+.coolback__container {
+    font-family: 'Montserrat';
+    max-width: 570px;
+    width: clamp(18.75rem, 10.568rem + 40.91vw, 35.625rem);
+    margin-top: 40px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 8px 5px rgba(75, 45, 166, 0.45);
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.form__title{
+    margin: clamp(1rem, 0.576rem + 2.12vw, 1.875rem) 0;
+    font-size: clamp(1.25rem, 0.947rem + 1.52vw, 1.875rem);
+    font-weight: 600;
+    text-align: center;
+}
+
+.form-container {
+}
+.form_coolback {
+}
+.input__name_container {
+}
+.class_input_container {
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+.class_input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid rgba(75, 45, 166, 0.80);
+    font-size: 16px;
+    padding: 4px 0 0 6px;
+    color: rgba(75, 45, 166, 1);
+    font-weight: 500;
+}
+.tel_input, .email_input{
+    color: rgba(75, 45, 166, 1);
+}
+.class_input:focus{
+    outline: none;
+}
+
+.class_input:focus ~ .text_input,
+.class_input:valid ~ .text_input {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: rgba(75, 45, 166, 1);
+}
+
+.text_input {
+    font-weight: 500;
+    position: absolute;
+    bottom: 14px;
+    left: 5px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+
+.button_input {
+    padding: 10px clamp(2.5rem, 1.288rem + 6.06vw, 5rem);
+    border-radius: 6px;
+    background: #8571C2;
+    max-width: 280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.btn_input{
+    font-family: 'Montserrat';
+    color: #FFF;
+    font-size: clamp(1.125rem, 0.943rem + 0.91vw, 1.5rem);
+    background-color: #8571C2;
+    border: none;
+}
