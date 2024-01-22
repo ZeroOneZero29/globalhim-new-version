@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="public/css/video.css">
     <link rel="stylesheet" href="public/css/main.css">
     <link rel="stylesheet" href="public/css/about-us.css">
+    <link rel="stylesheet" href="public/css/calculator.css">
     <link rel="stylesheet" href="public/css/product.css">
     <link rel="stylesheet" href="public/css/contact.css">
     <link rel="stylesheet" href="public/css/form.css">
@@ -26,6 +27,7 @@
 
     <script src="public/js/swiper.js"></script>
     <script defer src="public/js/script.js"></script>
+    <script defer src="public/js/index.js"></script>
 
     <div class="header">
         <div class="header__container">
@@ -52,14 +54,16 @@
             </div> 
         </div>
     </div>
-    <a href=""></a>
-    <a href="tel: +79538777276" class="telephone">
-        <div class="telephone-container">
-            <svg class="telephone-svg"  xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewBox="0 0 38 33" fill="none">
-                <path d="M34.6821 21.441C32.3752 21.7171 30.0984 21.6093 27.9358 21.1833C27.2524 21.0369 26.5412 21.2932 26.0955 21.8602L23.5933 25.9075C17.9825 24.011 12.4398 19.8236 9.13747 14.645L12.4219 11.0938C12.8654 10.508 12.9279 9.75864 12.643 9.12692C11.6998 7.1282 11.0763 4.93902 10.8001 2.63217C10.6788 1.6194 9.73382 0.876473 8.72105 0.997728L2.23184 1.77466C1.21907 1.89591 0.0538912 2.49199 0.222301 3.89861C2.30834 21.322 18.5394 34.065 35.944 31.9812C37.2756 31.8218 37.6593 30.5774 37.5358 29.5458L36.7611 23.0754C36.6398 22.0626 35.6948 21.3197 34.6821 21.441Z" fill="white"/>
-              </svg>
-        </div>
-    </a>
+    <div class="telphone">
+        <a href=""></a>
+        <a href="tel: +79538777276" class="telephone">
+            <div class="telephone-container">
+                <svg class="telephone-svg"  xmlns="http://www.w3.org/2000/svg" width="38" height="33" viewBox="0 0 38 33" fill="none">
+                    <path d="M34.6821 21.441C32.3752 21.7171 30.0984 21.6093 27.9358 21.1833C27.2524 21.0369 26.5412 21.2932 26.0955 21.8602L23.5933 25.9075C17.9825 24.011 12.4398 19.8236 9.13747 14.645L12.4219 11.0938C12.8654 10.508 12.9279 9.75864 12.643 9.12692C11.6998 7.1282 11.0763 4.93902 10.8001 2.63217C10.6788 1.6194 9.73382 0.876473 8.72105 0.997728L2.23184 1.77466C1.21907 1.89591 0.0538912 2.49199 0.222301 3.89861C2.30834 21.322 18.5394 34.065 35.944 31.9812C37.2756 31.8218 37.6593 30.5774 37.5358 29.5458L36.7611 23.0754C36.6398 22.0626 35.6948 21.3197 34.6821 21.441Z" fill="white"/>
+                  </svg>
+            </div>
+        </a>
+    </div>
     <div class="main">
         <div class="main__container">
             <h2 class="main__title">ГлобалХим</h2>
@@ -100,6 +104,22 @@
                         <div class="about-us__text">У нас работают лучшие специалисты, готовые помочь Вам с выбором, если возникнут проблемы или вопросы.</div>
                     </div> 
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="calculator">
+        <div class="calculator-container">
+            <h3 class="calculator_title">Калькулятор расчета стоимости</h3>
+            <div class="calculator-input-container">
+                <p class="title__inline">Количество материала:</p>                 
+                <input type="number" min="0" max="100" value="50" id="square-input" class="calc_number-input">
+                <p class="title__inline">тонн</p>                 
+            </div>
+            <input type="range" min="0" max="100" value="50" step="1" id="square-range" class="range-input">
+            <p class="calc-title">Итоговая стоимость:</p>
+            <div class="total-price-container">
+                <span class="value-total-price" id="total-price">0</span>
+                <span class="rub-price">рублей</span>
             </div>
         </div>
     </div>
