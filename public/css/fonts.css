@@ -2,45 +2,40 @@
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 300;
-    src: local("Montserrat"), 
-        url("/public/img/fonts/MontserratLight.woff") format("woff"),
-        url("/public/img/fonts/MontserratLight.ttf") format("tff");
+    src: url("/public/img/fonts/MontserratLight.woff") format('woff'),
+        url("/public/img/fonts/MontserratLight.ttf") format('tff');
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 400;
-    src: local("Montserrat"), 
-        url("/public/img/fonts/MontserratRegular.woff") format("woff"),
-        url("/public/img/fonts/MontserratRegular.ttf") format("tff");
+    src: url("/public/img/fonts/MontserratRegular.woff") format('woff'),
+        url("/public/img/fonts/MontserratRegular.ttf") format('tff');
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 500;
-    src: local("Montserrat"), 
-        url("/public/img/fonts/MontserratMedium.woff") format("woff"),
-        url("/public/img/fonts/MontserratMedium.ttf") format("tff");
+    src: url("/public/img/fonts/MontserratMedium.woff") format('woff'),
+        url("/public/img/fonts/MontserratMedium.ttf") format('tff');
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 600;
-    src: local("Montserrat"), 
-        url("/public/img/fonts/MontserratSemiBold.woff") format("woff"),
-        url("/public/img/fonts/MontserratSemiBold.ttf") format("tff");
+    src: url("/public/img/fonts/MontserratSemiBold.woff") format('woff'),
+        url("/public/img/fonts/MontserratSemiBold.ttf") format('tff');
 }
 
 @font-face {
     font-family: "Montserrat";
     font-style: normal;
     font-weight: 700;
-    src: local("Montserrat"), 
-        url("/public/img/fonts/MontserratBold.woff") format("woff"),
-        url("/public/img/fonts/MontserratBold.ttf") format("tff");
+    src: url("/public/img/fonts/MontserratBold.woff") format('woff'),
+        url("/public/img/fonts/MontserratBold.ttf") format('tff');
 }
 
 
