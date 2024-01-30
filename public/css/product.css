@@ -1,5 +1,6 @@
 .product {
     background: url('../img/bg_product.svg') center center repeat;
+    padding-bottom: 50px;
     font-family: 'Montserrat';
     color: #4B2DA6;
     padding-bottom: 0.2rem;
@@ -56,7 +57,6 @@
 
 
 .slide__button:hover {
-    transition: 500ms;
     background-color: rgba(61, 13, 206, 0.44);
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
 }
@@ -71,25 +71,26 @@
     background-position: 45% center;
     background-repeat: no-repeat;
     cursor: pointer;
+
 }
 
 .swiper-button-prev {
     position: absolute;
     left: -120px;
+    transition: all 500ms;
 }
 .swiper-button-next {
     position: absolute;
     right: -120px;
     transform: rotate(180deg);
+    transition: all 500ms;
 }
 .swiper-button-prev:hover {
-    transition: 500ms;
     background-color: rgba(61, 13, 206, 0.44);
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
 }
 
 .swiper-button-next:hover {
-    transition: 500ms;
     background-color: rgba(61, 13, 206, 0.44);
     box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
 }
@@ -148,6 +149,7 @@
     background-color:rgba(75, 45, 166, 0.44);
     border-radius: 8px;
     padding: 8px 10px;
+    transition: all 500ms;
 }
 
 .button__link {
@@ -171,17 +173,22 @@
 }
 
 .product__button_all {
-    padding: 0;
-    
-    margin-top: clamp(1.5rem, 1.175rem + 1.63vw, 3.125rem);
-    margin-bottom: clamp(1.5rem, 1.175rem + 1.63vw, 3.125rem);
+    background-color: #8571C2;
+    border-radius: 6px;
+    max-width: 300px;
+    width: clamp(13.75rem, 10.991rem + 13.79vw, 18.75rem);
+    margin: 0 auto;
+    padding: 22px 16px;
+    margin-top: 72px;
     cursor: pointer;
+    transition: 500ms;
     display: flex;
     justify-content: center;
 }
 
-.button_all {
-    text-decoration: none;
+.product__button_all:hover {
+    background-color: rgba(61, 13, 206, 0.55);
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -196,6 +203,11 @@
     font-weight: 400;
     display: flex;
     justify-content: center;
+    text-align: center;
+}
+
+.button_all {
+    text-decoration: none;
 }
 
 .button_all_btn:hover {

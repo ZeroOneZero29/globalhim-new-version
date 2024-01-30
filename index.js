@@ -18,3 +18,6 @@ app.get("/product/:name", function(req, res) {;
     res.render(`products/${req.params.name}`)
 });
 
+app.post('/message', function(req, res) {
+    console.log(req);
+})
