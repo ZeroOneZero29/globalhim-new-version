@@ -98,7 +98,6 @@
 
 
 
-
 .swiper-slide { 
     display: flex;
     flex-direction: column;
@@ -150,6 +149,17 @@
     border-radius: 8px;
     padding: 8px 10px;
     transition: all 500ms;
+}
+.slide__bottom {
+    display: flex;
+    align-items: center;    
+    width: 270px;
+    margin: 0 auto 34px auto;
+    justify-content: space-between;
+}
+
+.slide_price {
+    color: #fff;
 }
 
 .button__link {
