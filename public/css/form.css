@@ -94,6 +94,12 @@ textarea:-webkit-autofill {
     padding: clamp(0.5rem, 0.455rem + 0.23vw, 0.625rem)  clamp(2.5rem, 1.591rem + 4.55vw, 5rem);
     display: flex;
     align-items: center;
+    cursor: pointer;
+    transition:all 500ms;
+}
+
+.button_input:hover {
+    background-color: #634aad;
 }
 
 .input__problem_container {
@@ -196,6 +202,7 @@ textarea:valid ~ .text__problem_input{
     align-items: center;
     gap: 10px;
     min-width: 300px;
+    cursor: pointer;
 }
 
 .checkbox-input {
