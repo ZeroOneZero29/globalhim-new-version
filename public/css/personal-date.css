@@ -5,6 +5,7 @@
 .personal-info-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 10px 0 10px;
 }
 .personal-title {
     color: #4B2DA6;
