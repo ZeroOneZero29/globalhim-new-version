@@ -17,8 +17,12 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
-app.get("/product/:name", function(req, res) {;
-    res.render(`products/${req.params.name}`)
+app.get('/personal-date', function(req, res) {
+    res.render('personal-date');
+});
+
+app.get("/products/:name", function(req, res) {;
+    res.render(`products/${req.params.name}.ejs`)
 });
 
 app.post('/message', (req, res) => {

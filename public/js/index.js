@@ -5,12 +5,15 @@ let isRTL = document.documentElement.dir === 'rtl';
 
 function handleInputChange(e) {
   let target = e.target
+  let val
   if (e.target.type !== 'range') {
-    target = document.getElementById('range')
-  } 
+    val = target.valueAsNumber
+    target = document.getElementById('square-range')
+  } else {
+    val = target.value 
+  }
   const min = target.min
   const max = target.max
-  const val = target.value
   let percentage = (val - min) * 100 / (max - min)
   if (isRTL) {
     percentage = (max - val) 
@@ -22,9 +25,9 @@ function handleInputChange(e) {
 rangeInputs.forEach(input => {
   input.addEventListener('input', handleInputChange)
 })
-numberInput.forEach(input => {
-    input.addEventListener('input', handleInputChange)
-})
+
+numberInput.addEventListener('input', handleInputChange)
+
 
 
 // Handle element change, check for dir attribute value change
