@@ -32,6 +32,7 @@
 .product__title {
     font-size: clamp(1.5rem, 1.147rem + 1.76vw, 2.25rem);
     font-weight: 600;
+    margin-bottom: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
 }
 .description__product {
     font-size: clamp(1rem, 0.765rem + 1.18vw, 1.5rem);
@@ -40,6 +41,11 @@
     margin: clamp(1.25rem, 0.568rem + 3.41vw, 3.125rem) 0;
 }
 
+.product__price{
+    font-weight: 500;
+    font-size: clamp(1rem, 0.682rem + 1.59vw, 1.875rem);
+
+}
 
 .geo__con {
     gap: clamp(1.875rem, 1.193rem + 3.41vw, 3.75rem);

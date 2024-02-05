@@ -85,7 +85,7 @@ textarea:-webkit-autofill {
 .button_input {
     border-radius: 6px;
     max-width: 300px;
-    margin: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem)  auto clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem) auto;
+    margin: clamp(1.25rem, 1.114rem + 0.68vw, 1.625rem)  auto clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem) auto;
     font-family: 'Montserrat';
     color: #FFF;
     font-size: clamp(1.125rem, 0.943rem + 0.91vw, 1.5rem);
@@ -97,7 +97,7 @@ textarea:-webkit-autofill {
 }
 
 .input__problem_container {
-    margin-bottom: clamp(1.875rem, 1.648rem + 1.14vw, 2.5rem);
+    margin-bottom: clamp(1rem, 0.909rem + 0.45vw, 1.25rem);
     height: 80px;
 }
 
@@ -144,3 +144,94 @@ textarea:valid ~ .text__problem_input{
     color: rgba(75, 45, 166, 1);
     background-color: #FFF;
 }
+.flex-check{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-coolback {
+    border: #8571C2 1px solid;
+    width: 16px;
+    height: 16px;
+}
+.checkbox-text {
+    font-weight: 500;
+    font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+
+}
+
+/*.checkbox-input {
+    display: none;
+  }
+  .checkbox-input:checked + label .checkbox:after {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .checkbox {
+    margin: 2px;
+    padding: 2px;
+   
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: relative;
+  }
+  .checkbox:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 12px;
+    height: 12px;
+    background-color: rgba(75, 45, 166, 0.9);
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  */
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 300px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.fake_checkbox{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(75, 45, 166, 0.9);
+    border-radius: 3px;
+    position: relative;
+    min-width: 18px;
+}
+
+.fake_checkbox::before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: rgba(75, 45, 166, 0.9);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.checkbox-input:checked + .fake_checkbox::before{
+    opacity: 1;
+}
+
+.checkbox-text {
+}
+
+
